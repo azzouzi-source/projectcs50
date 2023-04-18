@@ -27,7 +27,7 @@ OPTIONS = [
 def hello_world():
   return render_template('home.html', options=OPTIONS, name_lycee="IbnKhaldoune")
 
-@app.route('api/option')
+@app.route('/option')
 def option():
   return jsonify(OPTIONS)
 
