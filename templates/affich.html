@@ -1,0 +1,28 @@
+<div class="border-bottom row" style="margin-bottom: 10px;padding-bottom:10px;">
+  <div class="col-9">
+          <h1 style="color:rgb(100,100,100);margin-bottom: 0;">
+            {{ option['title'] }}
+          </h1>
+          <div>
+            <b>
+              nubre of students:  
+            </b>
+            {{option['nubre_elev']}}
+          </div>
+        
+            {% if 'exist' in option %}
+            <div>
+              <b>
+                exist:
+              </b>
+              {{option['exist']}}
+            </div>
+            {% endif %}
+             
+  </div>  
+  <div class="col-3">
+    <button type="button" class="btn btn-primary">Apply</button>
+  </div>
+</div>
+
+
